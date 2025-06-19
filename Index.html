@@ -134,7 +134,7 @@
             background-color: #f8f9fa;
         }
 
-        .projeto-estudo::after {
+        .projeto::after {
             content: "ALURA";
             position: absolute;
             top: 15px;
@@ -177,7 +177,7 @@
         }
 
         /* Botões */
-        .action-btn {
+        .certificados-btn {
             display: inline-block;
             padding: 10px 20px;
             background-color: #2c3e50;
@@ -189,7 +189,7 @@
             font-weight: bold;
         }
 
-        .action-btn:hover {
+        .certificados-btn:hover {
             transform: scale(1.05);
             background-color: #3498db;
         }
@@ -241,4 +241,114 @@
     <nav>
         <ul>
             <li><a href="#sobre"><i class="fas fa-user"></i> Sobre</a></li>
-            <li><a href="#estudos"><i class="fas fa-graduation-cap"></i>
+            <li><a href="#estudos"><i class="fas fa-graduation-cap"></i> Estudos</a></li>
+            <li><a href="#projetos"><i class="fas fa-code"></i> Projetos</a></li>
+            <li><a href="#contato"><i class="fas fa-envelope"></i> Contato</a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <img src="https://ui-avatars.com/api/?name=Guilherme+W&background=3498db&color=fff&size=150" alt="Foto de Perfil" class="foto-perfil">
+        <h1>Guilherme Wesselka</h1>
+        <p>Estudante de Programação | JavaScript | C# | HTML/CSS</p>
+    </header>
+
+    <section id="sobre">
+        <h2><i class="fas fa-user"></i> Sobre Mim</h2>
+        <p>Sou apaixonado por tecnologia e estou em formação como desenvolvedor através da plataforma Alura. Atualmente focado em:</p>
+        <ul>
+            <li>Desenvolvimento Web (HTML, CSS, JavaScript)</li>
+            <li>Lógica de Programação</li>
+            <li>Fundamentos de C#</li>
+            <li>Versionamento com Git</li>
+        </ul>
+        
+        <div class="skills">
+            <h3><i class="fas fa-chart-bar"></i> Minhas Skills</h3>
+            <div class="skill-item">
+                <span>HTML/CSS <small>(80%)</small></span>
+                <div class="skill-bar">
+                    <div class="skill-level" style="width: 80%"></div>
+                </div>
+            </div>
+            <div class="skill-item">
+                <span>JavaScript <small>(65%)</small></span>
+                <div class="skill-bar">
+                    <div class="skill-level" style="width: 65%"></div>
+                </div>
+            </div>
+            <div class="skill-item">
+                <span>C# <small>(50%)</small></span>
+                <div class="skill-bar">
+                    <div class="skill-level" style="width: 50%"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="estudos">
+        <h2><i class="fas fa-graduation-cap"></i> Meus Estudos</h2>
+        <div class="projeto">
+            <h3>Formação Alura</h3>
+            <p>Já completei mais de 120 horas de cursos, incluindo:</p>
+            <ul>
+                <li>Lógica de Programação com JavaScript</li>
+                <li>HTML5 e CSS3 (Partes 1 a 4)</li>
+                <li>JavaScript para Web</li>
+                <li>Introdução ao C#</li>
+                <li>Git e GitHub</li>
+            </ul>
+            <p><strong>Em progresso:</strong> Formação Front-end e Back-end</p>
+            <a href="https://cursos.alura.com.br/user/seu-usuario" 
+               target="_blank" 
+               class="certificados-btn">
+               <i class="fas fa-award"></i> Ver Certificados na Alura
+            </a>
+        </div>
+    </section>
+
+    <section id="projetos">
+        <h2><i class="fas fa-code"></i> Meus Projetos</h2>
+        <div class="projeto">
+            <h3>Monalisa Interativa</h3>
+            <p>Projeto artístico desenvolvido com JavaScript Canvas, recriando a obra de Da Vinci com elementos interativos.</p>
+            <p><strong>Tecnologias:</strong> HTML5, CSS3, JavaScript</p>
+            <a href="#"><i class="fas fa-external-link-alt"></i> Ver Projeto</a>
+            <a href="#" style="background-color: #6e5494; margin-left: 10px;"><i class="fab fa-github"></i> Código no GitHub</a>
+        </div>
+        <div class="projeto">
+            <h3>Jogo de Corrida 2D</h3>
+            <p>Jogo simples desenvolvido para praticar lógica de programação e manipulação do DOM.</p>
+            <p><strong>Tecnologias:</strong> JavaScript, CSS Animations</p>
+            <a href="#"><i class="fas fa-external-link-alt"></i> Ver Projeto</a>
+            <a href="#" style="background-color: #6e5494; margin-left: 10px;"><i class="fab fa-github"></i> Código no GitHub</a>
+        </div>
+        <div class="projeto">
+            <h3>Calculadora C#</h3>
+            <p>Projeto console aplicando conceitos básicos de C# e estrutura de dados.</p>
+            <p><strong>Tecnologias:</strong> C#, .NET Core</p>
+            <a href="#" style="background-color: #6e5494;"><i class="fab fa-github"></i> Código no GitHub</a>
+        </div>
+    </section>
+
+    <section id="contato">
+        <h2><i class="fas fa-envelope"></i> Contato</h2>
+        <p><i class="fas fa-envelope"></i> <strong>Email:</strong> guiswesselka@gmail.com</p>
+        <p><i class="fab fa-github"></i> <strong>GitHub:</strong> <a href="https://github.com/seu-usuario" target="_blank">github.com/seu-usuario</a></p>
+        <p><i class="fas fa-graduation-cap"></i> <strong>Alura:</strong> <a href="https://cursos.alura.com.br/user/seu-usuario" target="_blank">Meu perfil na Alura</a></p>
+        
+        <div style="margin-top: 30px;">
+            <a href="mailto:guiswesselka@gmail.com" class="certificados-btn">
+                <i class="fas fa-paper-plane"></i> Enviar Mensagem
+            </a>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Guilherme Wesselka - Estudante de Programação</p>
+        <p style="margin-top: 10px; font-size: 14px;">
+            Desenvolvido com <i class="fas fa-heart" style="color: #e74c3c;"></i> e muito café <i class="fas fa-coffee"></i>
+        </p>
+    </footer>
+</body>
+</html>
