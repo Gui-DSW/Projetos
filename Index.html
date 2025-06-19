@@ -1,61 +1,198 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <!-- Metadados anteriores... -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio de Estudante - Programação</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
-        /* Estilos anteriores... */
-        
-        /* Novos estudos */
-        #estudos {
-            background-color: #f8f9fa;
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
         }
-        
-        .projeto {
-            position: relative;
+
+        html {
+            scroll-behavior: smooth;
         }
-        
-        .projeto::after {
-            content: "Alura";
-            position: absolute;
-            top: 10px;
-            right: 10px;
+
+        nav {
+            background-color: #2c3e50;
+            position: sticky;
+            top: 0;
+            padding: 15px;
+            z-index: 100;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav li {
+            margin: 0 15px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            transition: opacity 0.3s;
+        }
+
+        nav a:hover {
+            opacity: 0.8;
+        }
+
+        header {
             background-color: #2c3e50;
             color: white;
-            padding: 3px 8px;
+            padding: 60px 0 40px;
+            text-align: center;
+        }
+
+        .foto-perfil {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid white;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            margin-bottom: 20px;
+        }
+
+        section {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 30px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+
+        h1, h2, h3 {
+            color: #2c3e50;
+        }
+
+        .projeto {
+            margin-bottom: 25px;
+            transition: transform 0.3s;
+            padding: 15px;
+            border-radius: 8px;
+        }
+
+        .projeto:hover {
+            transform: translateY(-5px);
+            background-color: #f8f9fa;
+        }
+
+        .projeto a {
+            display: inline-block;
+            margin-top: 8px;
+            padding: 8px 12px;
+            background-color: #3498db;
+            color: white;
+            text-decoration: none;
             border-radius: 4px;
-            font-size: 12px;
+            transition: background-color 0.3s;
+        }
+
+        .projeto a:hover {
+            background-color: #2980b9;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            background-color: #2c3e50;
+            color: white;
+            margin-top: 40px;
+        }
+
+        a {
+            color: #3498db;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 600px) {
+            section {
+                margin: 20px 10px;
+                padding: 15px;
+            }
+            
+            .foto-perfil {
+                width: 120px;
+                height: 120px;
+            }
+            
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            nav li {
+                margin: 5px 0;
+            }
         }
     </style>
 </head>
 <body>
-    <!-- Cabeçalho e navegação... -->
+    <nav>
+        <ul>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#projetos">Projetos</a></li>
+            <li><a href="#contato">Contato</a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <img src="https://ui-avatars.com/api/?name=Guilherme+W&background=2c3e50&color=fff&size=150" alt="Foto de Perfil" class="foto-perfil">
+        <h1>Olá! Eu sou Guilherme</h1>
+        <p>Estudante de Programação | Desenvolvedor em formação</p>
+    </header>
 
     <section id="sobre">
-        <!-- Conteúdo anterior... -->
-        <div class="skills">
-            <h3>Minhas Skills</h3>
-            <!-- Barras de skill aqui -->
-        </div>
+        <h2>Sobre mim</h2>
+        <p>Sou apaixonado por tecnologia e estou atualmente estudando desenvolvimento web, lógica de programação e algoritmos. Busco sempre aprender novas linguagens e ferramentas.</p>
+        <p>Minhas principais habilidades incluem:</p>
+        <ul>
+            <li>HTML5 e CSS</li>
+            <li>JavaScript </li>
+            <li>Lógica de Programação</li>
+        </ul>
     </section>
 
-    <section id="estudos">
-        <h2><i class="fas fa-graduation-cap"></i> Meus Estudos</h2>
+    <section id="projetos">
+        <h2>Projetos</h2>
         <div class="projeto">
-            <h3>Formação na Alura</h3>
-            <p>Já completei 120 horas de cursos incluindo:</p>
-            <ul>
-                <li>Lógica de Programação com JavaScript</li>
-                <li>HTML5 e CSS3 parte 1 a 4</li>
-                <li>Introdução ao C#</li>
-            </ul>
-            <a href="https://cursos.alura.com.br/user/seu-usuario" 
-               target="_blank" 
-               class="certificados-btn">
-               <i class="fas fa-award"></i> Ver Certificados Alura
-            </a>
+            <h3>Monalisa</h3>
+            <p>Um projeto artístico desenvolvido com JavaScript, inspirado na obra clássica de Leonardo da Vinci.</p>
+            <a href="#"><i class="fas fa-external-link-alt"></i> Ver Projeto</a>
+        </div>
+        <div class="projeto">
+            <h3>Jogo de Corrida</h3>
+            <p>Um jogo simples de corrida criado com programação web para praticar lógica e interação com o usuário.</p>
+            <a href="#"><i class="fas fa-external-link-alt"></i> Ver Projeto</a>
         </div>
     </section>
 
-    <!-- Restante do conteúdo... -->
+    <section id="contato">
+        <h2>Contato</h2>
+        <p><i class="fas fa-envelope"></i> Email: guiswesselka@gmail.com</p>
+        <p><i class="fab fa-github"></i> GitHub: <a href="#">https://github.com/Gui-DSW</a></p>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Guilherme Wesselka - </p>
+    </footer>
 </body>
 </html>
